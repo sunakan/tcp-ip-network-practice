@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+  connection: local
+  become: yes
+  gather_facts: True
+
+  roles:
+    - common
+    - network
+    - practice
+    - docker

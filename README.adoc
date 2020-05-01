@@ -1,0 +1,23 @@
+= TCP/IPの勉強
+
+== Vagrantでやりたい場合
+
+----
+$ make up
+$ make ssh
+----
+
+== 別にVagrant出なくていい場合
+
+----
+$ cat ./ansible/roles/practice/tasks/main.yml
+これらのパッケージを導入（Debian系なので、適宜合わせる）
+----
+
+== 実行(NetworkNamespace3個、ルーター2個)
+
+----
+# Vagrantかどうかは任せる
+$ cd codes/ns3-router2/
+$ make all
+----

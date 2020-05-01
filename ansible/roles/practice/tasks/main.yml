@@ -1,0 +1,19 @@
+---
+
+- name: 勉強で使うパッケージ群
+  become: yes
+  apt:
+    name:
+      - iproute2
+      - iputils-ping
+      - traceroute
+      - tcpdump
+      - dnsmasq
+      - netcat-openbsd
+      - curl
+      - wget
+      - gawk
+      - dnsutils
+      - procps
+    update_cache: yes
+    cache_valid_time: 3600
